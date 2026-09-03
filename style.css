@@ -1,0 +1,29 @@
+/* te bordery to do testowania ukladu */
+main, header, footer, div{
+    border: 1px solid black;
+    padding: 4px;
+}
+*{
+    box-sizing: border-box;
+}
+div{
+       float:left;
+       height:10vh;
+       width:15vh;
+}
+footer{
+    clear: both;
+}
+#h1{
+    width:60%;
+    float:left;
+
+}
+#h2{
+    width:40%;
+    float: right;
+    
+}
+main{
+    clear: both;
+}
