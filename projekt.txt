@@ -1,0 +1,41 @@
+
+Projekt wykonany przez: Mateusz Domagała (@gxuohcscchbsp), Michał Antoniak (@amr1vkr1)
+
+Cel bazy danych jest bardzo prosty. Chcemy udostępnić uczniom narzędzia do nauki do egzaminu Inf02 (nauka podzespołów, posługiwanie się Windows 11, Windows server, Linux Opensuse oraz Ubuntu) jak i do Inf 03 (HTML5, CSS3, JavaScript,Hypertext Preprocessor (php)).
+
+Baza danych ma następujące cele:
+- przechowywaniw danych uzytkownikow (uzytkownikow, uczniów, nauczycieli, administratorów)
+- przechowywanje pytan do losowania na testy( formuła 5 pytań abcd, 3 prawda fałsz, 2 wpisania kodu/kwerendy)
+- zapisywanie progresu oraz analiza wyników użytkowników
+- podłączenie danych użytkowników, aby nauczyciel miał wgląd w wyniki swoich podopiecznych
+
+Baza danych zawiera tabele
+- uzytkownicy (Id, imie, nazwisko,email, haslo, wykupiony pakiet, progres, idklasy, rola)
+ -tabela kategorua łącząca id pytania oraz nazwe działu
+- tabela nauczyciel_klasa zawierające id, id nauczyciela oraz id klasy
+- tabela klasa łącząca nauczyciela z klasą po wartościach id
+- tabela pytania zawierająca id pytanua, treść pytania, typ(wielokrotny wybor, prawda fałsz, kwerenda), dział oraz maksymalną liczbe punktów
+- tabela odpowiedzi zawierające id odpowiedzi, id pytania oraz poprawną odpowiedź
+- tabela progresu uzytkownika (id zapisu, id ucznia, , id pytania, id odpowiedzi oraz wynik końcowy liczony w punktach)
+
+
+
+Relacje:
+Uzytkkowniky   (jeden) ->   Progres (wiele)
+uzytkownicy (wiele) --> nauczyciel (jeden)
+progres (jeden) - > pytania (chuj wie, chyba wiele(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
